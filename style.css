@@ -1,0 +1,47 @@
+body {
+    background-color: #ecebeb;
+    width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#lista-nav {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li, a {
+    background-color: rgb(29, 184, 184);
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+article a {
+    color: #fff;
+    margin: 0px;
+}
+
+article {
+    width: 33%;
+}
+
+#conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: aquamarine;
+    font-size: 40px;
+}
