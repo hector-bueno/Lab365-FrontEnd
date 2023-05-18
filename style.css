@@ -1,0 +1,58 @@
+body {
+    background-color: rgb(238, 235, 235);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+.botao {
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    background-color: rgb(50, 196, 204);
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color:rgb(50, 196, 204);
+    margin-top: -40px;
+}
+
+#corpo {
+    /* background-color: rgb(38, 255, 0); */
+    display: flex;
+    justify-content: space-between;
+}
+
+#texto {
+    color: rgb(43, 150, 226);
+}
+
+#destaque strong {
+    color: rgb(6, 6, 97);
+    font-size: 60px;
+}
+
+#lista-links {
+    display: flex;
+    justify-content: flex-start;
+}
