@@ -1,6 +1,9 @@
 body {
     background-color: rgb(238, 235, 235);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1200px;
+    margin: auto;
+    padding-top: 100px;
 }
 
 #cabecalho {
@@ -10,6 +13,7 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
 }
 
 nav ul {
@@ -24,17 +28,18 @@ li {
 
 .botao {
     width: 150px;
-    height: 60px;
+    height: 40px;
     text-align: center;
     background-color: rgb(50, 196, 204);
     border-radius: 15px;
 }
 
 h1 {
-    font-size: 25px;
+    font-size: 30px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     color:rgb(50, 196, 204);
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 #corpo {
@@ -43,8 +48,13 @@ h1 {
     justify-content: space-between;
 }
 
-#texto {
-    color: rgb(43, 150, 226);
+#corpo article {
+    margin: auto;
+    padding-right: 50px;
+}
+
+.texto {
+    color: rgb(13, 71, 113);
 }
 
 #destaque strong {
@@ -57,7 +67,30 @@ h1 {
     justify-content: flex-start;
 }
 
+form {
+    width: 300px;
+}
+
 footer p {
     color: aquamarine;
     font-size: 40px;
+}
+
+fieldset {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset label {
+    margin-top: 20px;
+}
+
+fieldset input {
+    margin-bottom: 20px;
+}
+
+fieldset .botao {
+    color: white;
+    margin-top: 20px;
 }

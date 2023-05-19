@@ -5,113 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Lab 365 - Contato</title>
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <main>
-        <!-- Atividade 1: header como na página inicial -->
-        <header>
-            <img src="imgs/logo.png" alt="Logo da Empresa" title="Logo Company" width="200px">
-        </header>
-    
-        <nav>
-            <ul>
-                <li>
-                    <a href="inicio.html">Início</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-    <section>
-        <article>
+        <section id="cabecalho">
+            <header>
+                <img src="imgs/logo.png" alt="Logo da Empresa" title="Logo Company" width="200px">
+            </header>
+        
+            <nav>
+                <ul>
+                    <li class="botao">
+                        <a href="inicio.html">Início</a>
+                    </li>
+                    <li class="botao">
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section id="corpo" style="background-color: yellow;">
+            <article style="width: 500px;">
+                <p id="destaque"><strong>Contato</strong></p>
+                <h1>Landing Page</h1>
+                
+                <p class="texto">Preencha os dados abaixo e envie sua mensagem de contato.</p>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam natus perspiciatis dolorum, ullam accusamus reiciendis asperiores quisquam vel earum recusandae molestias, quidem totam, animi eveniet quod. Laborum, quidem blanditiis.</p>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam natus perspiciatis dolorum, ullam accusamus reiciendis asperiores quisquam vel earum recusandae molestias, quidem totam, animi eveniet quod. Laborum, quidem blanditiis.</p>
+            </article>
 
-            <h1>Formulário de Contato</h1>
-        
-            <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
-        
-            <form action="teste.php" method="post">
-        
+            <form action="teste.php" method="post" style="width: 700px;">
+            
                 <fieldset name="dados">
                     <legend><h5>Dados de Contato</h5></legend>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" name="nome" id="txtNome" maxlength="100" size="50" required>
-                    <br><br>
-        
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="txtNome" maxlength="100" size="50" required>                   
                     <label for="data">Data de Nascimento:</label>
-                    <br>
                     <input type="date" name="data" required>
-                    <br><br>
-        
-                    <!-- Atividade 2: opções de Sexo -->
-                    <label for="sexo">Sexo:</label>
-                    <br>
-                    <input type="radio" name="genero" value="masculino" id="rdMasc" required>Masculino
-                    <input type="radio" name="genero" value="feminino" id="rdFem" required>Feminino
-                    <br><br>
-                    
-                    <!-- Atividade 3: campo endereço -->
-                    <label for="endereco">Endereço:</label>
-                    <br>
-                    <input type="text" name="endereco" required>
-                    <br><br>
-                    
-                    <label for="estado">Estado:</label>
-                    <br>
-                    <select name="estado" required>
-                        <option value="São Paulo" id="chkSP">SP</option>
-                        <option value="Rio de Janeiro" id="chkRJ">RJ</option>
-                        <option value="Paraná" id="chkPR">PR</option>
-                    </select>
-                    <br><br>
-                    
-                    <!-- Atividade 4: cidade -->
-                    <label for="cidade">Cidade:</label>
-                    <br>
-                    <select name="cidade" required>
-                        <option value="São Paulo" id="rdSaoPaulo">São Paulo</option>
-                        <option value="Campinas" id="rdCampinas">Campinas</option>
-                        <option value="Guarulhos" id="rdGuarulhos">Guarulhos</option>
-                    </select>
-                    <br><br>
-                    
-                    <!-- Atividade 5: celular com placeholder -->
                     <label for="telefone">Telefone:</label>
-                    <br>
                     <input type="text" name="telefone" placeholder="(##) #####-####">
-                    <br><br>
-        
                     <label for="email">E-mail:</label>
-                    <br>
                     <input type="email" name="email" placeholder="email@email.com" required>
-                    <br><br>
-            
-                    <!-- Atividade 6: opções de interesse -->
-                    <label for="interesse">Área de Interesse:</label>
-                    <br>
-                    <input type="checkbox" name="interesse" value="html" id="chkHTML">HTML
-                    <input type="checkbox" name="interesse" value="css" id="chkCSS">CSS
-                    <input type="checkbox" name="interesse" value="javascript" id="chkJS">JavaScript
-                    <br><br>
-        
-                    <!-- Atividade 7: campo para mensagem -->
                     <label for="mensagem">Mensagem:</label>
-                    <br>
                     <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Insira aqui a sua Mensagem..."></textarea>
-                    <br><br>
-        
-                    <!-- Atividade 8: botão enviar -->
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" class="botao">
                 </fieldset>
-        </article>
-    </section>
-    
-        </form>
+            </form>
+        </section>
     </main>
 
     <!-- Atividade 9: footer como página iniciadonl -->
     <footer>
-        <ul>
+        <ul id="lista-links">
             <li><a href="https://www.instagram.com/" target="_blank"><img src="imgs/logo-insta.png" alt="" title="Logo Instagram""></a></li>
             <li><a href="https://twitter.com/login?lang=pt" target="_blank"><img src="imgs/logo-twitter.png" alt="" title="Logo Twitter"></a></li>
             <li><a href="https://www.facebook.com/" target="_blank"><img src="imgs/logo-facebook.png" alt="" title="Logo Facebook"></li></a>
