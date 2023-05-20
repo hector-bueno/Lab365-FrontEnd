@@ -26,20 +26,22 @@
             </nav>
         </section>
         
-        <section id="corpo" style="background-color: yellow;">
-            <article style="width: 500px;">
+        <!-- <section id="corpo" style="background-color: yellow;"> -->
+        <section id="corpo">
+            <!-- <article style="width: 500px;"> -->
+            <article>
                 <p id="destaque"><strong>Contato</strong></p>
                 <h1>Landing Page</h1>
                 
                 <p class="texto">Preencha os dados abaixo e envie sua mensagem de contato.</p>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam natus perspiciatis dolorum, ullam accusamus reiciendis asperiores quisquam vel earum recusandae molestias, quidem totam, animi eveniet quod. Laborum, quidem blanditiis.</p>
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam natus perspiciatis dolorum, ullam accusamus reiciendis asperiores quisquam vel earum recusandae molestias, quidem totam, animi eveniet quod. Laborum, quidem blanditiis.</p>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam natus perspiciatis dolorum, ullam accusamus reiciendis asperiores quisquam vel earum recusandae molestias.</p>
+                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veniam natus perspiciatis dolorum, ullam accusamus reiciendis asperiores quisquam vel earum recusandae molestias.</p>
             </article>
 
             <form action="teste.php" method="post" style="width: 700px;">
             
                 <fieldset name="dados">
-                    <legend><h5>Dados de Contato</h5></legend>
+                    <!-- <legend><h5>Dados de Contato</h5></legend> -->
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="txtNome" maxlength="100" size="50" required>                   
                     <label for="data">Data de Nascimento:</label>
@@ -49,7 +51,7 @@
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" placeholder="email@email.com" required>
                     <label for="mensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="" cols="30" rows="10" placeholder="Insira aqui a sua Mensagem..."></textarea>
+                    <textarea name="mensagem" id="txt-mensagem" cols="30" rows="10" placeholder="Insira aqui a sua Mensagem..."></textarea>
                     <input type="submit" value="Enviar" class="botao">
                 </fieldset>
             </form>

@@ -51,15 +51,18 @@ h1 {
 #corpo article {
     margin: auto;
     padding-right: 50px;
+    width: 500px;
 }
 
 .texto {
     color: rgb(13, 71, 113);
+    font-size: 17px;
+    margin: 45px 0px;
 }
 
 #destaque strong {
     color: rgb(6, 6, 97);
-    font-size: 60px;
+    font-size: 70px;
 }
 
 #lista-links {
@@ -77,17 +80,36 @@ footer p {
 }
 
 fieldset {
-    background-color: aqua;
     display: flex;
     flex-direction: column;
+    padding: 25px;
+    border: 3px solid rgb(28, 159, 176);
+    border-radius: 15px;
 }
 
 fieldset label {
-    margin-top: 20px;
+    margin: 10px 0px 2px 0px;
+    font: 1em "Fira Sans", sans-serif;
+    font-weight: 800;
 }
 
 fieldset input {
-    margin-bottom: 20px;
+    height: 45px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+fieldset textarea, input {
+    text-indent: 10px;
+    border: 3px solid rgb(28, 159, 176);
+    border-radius: 10px;
+    font: 1em "Fira Sans", sans-serif;
+}
+
+#txt-mensagem {
+    padding-top: 20px;
+    height: 130px;
 }
 
 fieldset .botao {
